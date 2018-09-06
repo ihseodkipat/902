@@ -12,7 +12,7 @@
         }
 
         * {
-            box-sizing: border-box
+            box-sizing: border-box;
         }
 
         .azad {
@@ -20,7 +20,7 @@
             width: 141px;
             height: 445px;
             padding: 5px;
-            border-radius: 5px;
+            border-radius: 0;
             margin: 0 5px 0 0
         }
 
@@ -30,10 +30,18 @@
             padding: 25px;
             max-width: 750px;
             margin: auto;
-            border-radius: 10px;
+            border-radius: 0;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.15)
         }
 
+	.c2 { 
+	    margin: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+	}
         .dl-box {
             position: relative;
             display: flex;
@@ -47,16 +55,16 @@
             background-size: cover;
             color: #000;
             display: flex;
-            flex: 52%;
+            flex: 50%;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
+            padding: 80.5px 50px 80.5px 50px;
             border-radius: 0;
-            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-            margin: 0 0 10px;
+            border: #E2E2E2 solid 1px;
+            margin: 0 0 5px;
             width: 100%;
             font-size: 2em;
-            z-index: 0
+            z-index: 0;
         }
 
         .btn:after {
@@ -66,10 +74,10 @@
             z-index: -1;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, .9);
+            background: rgba(255, 255, 255, .8);
             left: 0;
             right: 0;
-            border-radius: 5px;
+            border-radius: 0;
             transition: all .5s
         }
 
@@ -81,8 +89,10 @@
     </style>
 </head>
 <body>
-<h1 align="center" style="margin: 5px">Rasol Azad</h1>
-<p align="center">please visit desktop version</p>
+<div style="height: 25px;"></div>
+<h1 align="center" style="text-transform: uppercase; margin: 0 0 -12px 0;">Rasol Azad</h1>
+<p align="center" style="text-transform: uppercase;">please visit desktop version</p>
+<div class="c2">
 <div class="container">
     <div class="azad"></div>
     <div class="dl-box">
@@ -90,5 +100,7 @@
         <a class="btn" href="https://en.freedownloadmanager.org/Windows-PC/Flip-Boom-Doodle.html" style="background: url('https://cdn.bahgol.ga/FlipBoom.jpeg')">Flip Boom Toon Boon Doodle <i class="material-icons">file_download</i></a>
     </div>
 </div>
+</div>
+<p style="transform: rotate(90deg); position: absolute; left: -125px; top: 50%; font-size: 20px;">MADE WITH ❤️ IN <a style="text-decoration: none;" href="https://www.google.com/maps/place/Khanqah+Sofla,+Ardabil+Province,+Iran/">KHANGAH SOFLA</a></p>
 </body>
 </html>
